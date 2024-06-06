@@ -6,7 +6,6 @@ default-character-set=utf8mb4
 
 [mysql]
 default-character-set=utf8mb4
-default-time-zone = 'UTC'
 [mysqld]
 # The default character set that will be used when a new schema or table is
 # created and no character set is defined
