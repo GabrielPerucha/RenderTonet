@@ -1,0 +1,24 @@
+# Speficic Mowiz Local configuration file
+# For MySQL
+# ---------------------------------------------------------
+[client]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4
+default-time-zone = 'UTC'
+[mysqld]
+# The default character set that will be used when a new schema or table is
+# created and no character set is defined
+character-set-server=utf8mb4
+collation-server=utf8mb4_0900_ai_ci
+
+# Log files for local environment. These are mounted from a folder
+# on the host
+log_error=/var/log/mysql/mysql_error.log
+general_log_file=/var/log/mysql/mysql.log
+general_log=1
+slow_query_log=1
+slow_query_log_file=/var/log/mysql/mysql_slow.log
+long_query_time=2
+log_queries_not_using_indexes=1
